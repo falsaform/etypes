@@ -21,4 +21,4 @@ DATABASES = {
     }
 }
 
-AutoLoader(locals(), password_var_name="DEVELOPMENT_PASSWORD")
+AutoLoader(locals=locals(), password_var_name="DEVELOPMENT_PASSWORD")

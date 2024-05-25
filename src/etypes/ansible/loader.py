@@ -42,12 +42,10 @@ class VarsModule(BaseVarsPlugin):
         """parses the inventory file"""
 
         etypes_file = os.environ.get('ETYPES_FILE', None)
+
         if not etypes_file:
-            raise Exception("ETYPES_FILE not specified")
+            raise Exception("ETYPES_FILE must be specified")
         
-        etypes_password = os.environ.get('ETYPES_PASSWORD', None)
-        if not etypes_password:
-            raise Exception("ETYPES_PASSWORD not specified")
         data = {}
         with open(etypes_file, 'r') as fp:
             source = fp.read()

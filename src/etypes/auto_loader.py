@@ -36,11 +36,14 @@ class AutoLoader:
         return node
 
     
-    def __init__(self, locals, password_var_name=None, password_file=None):
+    def __init__(self, locals=None, password_var_name=None, password_file=None):
 
+        if not type(locals) == dict:
+            raise Exception("Locals must be a dict")
+        
         if not password_file and not password_var_name:
             raise Exception("You must specify a password_var_name or password_file")
-        
+
         if password_var_name and not password_file:
             self.password = os.environ.get(password_var_name, None)
             if not self.password:
