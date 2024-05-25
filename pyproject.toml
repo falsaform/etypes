@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "etypes"
-version = "1.0.3"
+version = "1.0.4"
 description = "A python module to store, encrypt and decrypt type hinted strings in a python file"
 authors = ["Dan Brosnan <dpjbrosnan@gmail.com>"]
 packages = [{ include = "etypes", from = "src" }]
