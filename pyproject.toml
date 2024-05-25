@@ -7,9 +7,6 @@ packages = [{ include = "etypes", from = "src" }]
 readme = ["README.md", "CHANGELOG.md"]
 keywords = ["encrypt", "secret string", "secret", "decrypt", "env var"]
 repository = "https://github.com/falsaform/etypes.git"
-issues = "https://github.com/falsaform/issues"
-changelog = "https://github.com/falsaform/etypes/master/CHANGELOG.md"
-
 
 [tool.poetry.dependencies]
 python = "^3.10"
