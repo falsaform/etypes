@@ -1,10 +1,15 @@
 [tool.poetry]
 name = "etypes"
-version = "1.0.2"
+version = "1.0.3"
 description = "A python module to store, encrypt and decrypt type hinted strings in a python file"
 authors = ["Dan Brosnan <dpjbrosnan@gmail.com>"]
 packages = [{ include = "etypes", from = "src" }]
 readme = ["README.md", "CHANGELOG.md"]
+keywords = ["encrypt", "secret string", "secret", "decrypt", "env var"]
+repository = "https://github.com/falsaform/etypes.git"
+issues = "https://github.com/falsaform/issues"
+changelog = "https://github.com/falsaform/etypes/master/CHANGELOG.md"
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
