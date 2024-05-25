@@ -1,0 +1,14 @@
+- name: Test outputting decrypted DATABASE_PASSWORD from python file with Encrypted string
+  debug: msg="DATABASE_PASSWORD={{ DATABASE_PASSWORD }}"
+
+- name: Test outputting decrypted AWS_ACCESS_SECRET_KEY from python file with Encrypted string
+  debug: msg="AWS_ACCESS_SECRET_KEY={{ AWS_ACCESS_SECRET_KEY }}"
+
+- name: Test outputting decrypted AWS_SECRET_ACCESS_KEY from python file with Encrypted string
+  debug: msg="AWS_SECRET_ACCESS_KEY={{ AWS_SECRET_ACCESS_KEY }}"
+
+- name: Test outputting decrypted postgres database password from python file with Encrypted string, from dict
+  debug: msg="DATABASES.default.DATABASE_PASSWORD={{ DATABASES.default.DATABASE_PASSWORD }}"
+
+- name: Test common imported project name
+  debug: msg="PROJECT_NAME={{ PROJECT_NAME }}"

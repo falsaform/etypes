@@ -1,0 +1,14 @@
+all:
+  hosts:
+    development:
+      ENVIRONMENT:
+        ETYPES_FILE: ../fixtures/ansible/development.py
+        ETYPES_PASSWORD: development-password
+    staging:
+      ENVIRONMENT:
+        ETYPES_FILE: ../fixtures/ansible/staging.py
+        ETYPES_PASSWORD: development-password
+    production:
+      ENVIRONMENT:
+        ETYPES_FILE: ../fixtures/ansible/production.py
+        ETYPES_PASSWORD: production-password

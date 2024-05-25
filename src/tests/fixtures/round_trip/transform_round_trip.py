@@ -1,0 +1,17 @@
+from etypes import DecryptedSecret
+
+POSTGRES_PASSWORD: DecryptedSecret = "BlahblahSecret"
+GA_SECRET_ID: DecryptedSecret = "this_is_a_secret"
+
+SOME_SECRET_INT_AS_STRING: DecryptedSecret = "12345"
+
+SOME_SECRET_BOOL_1_AS_STRING: DecryptedSecret = "True"
+SOME_SECRET_BOOL_2_AS_STRING: DecryptedSecret = "False"
+
+SECRETS = {
+    "POSTGRES_PASSWORD": POSTGRES_PASSWORD,
+    "GA_SECRET_ID": GA_SECRET_ID,
+    "SOME_SECRET_INT_AS_STRING": int(SOME_SECRET_INT_AS_STRING),
+    "SOME_SECRET_BOOL_1_AS_STRING": bool(SOME_SECRET_BOOL_1_AS_STRING),
+    "SOME_SECRET_BOOL_2_AS_STRING": bool(SOME_SECRET_BOOL_2_AS_STRING),
+}

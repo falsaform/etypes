@@ -1,0 +1,17 @@
+services:
+  development:
+    build:
+      dockerfile: ./docker/Dockerfile
+      context: .
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    command: bash
+    entrypoint: sh -c
+
+  publish-package:
+    image: python:3.10
+    volumes:
+      - ./:/app
+    working_dir: /app
