@@ -21,4 +21,4 @@ DATABASES = {
     }
 }
 
-AutoLoader(locals(), password_file="/tmp/dynamic_loader_password_file")
+AutoLoader(locals=locals(), password_file="/tmp/dynamic_loader_password_file")

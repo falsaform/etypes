@@ -23,4 +23,4 @@ DATABASES = {
     }
 }
 
-AutoLoader(locals(), password_var_name="ETYPES_PASSWORD")
+AutoLoader(locals=locals(), password_var_name="ETYPES_PASSWORD")

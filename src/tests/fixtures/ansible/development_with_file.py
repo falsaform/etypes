@@ -25,4 +25,6 @@ DATABASES = {
     }
 }
 
-AutoLoader(locals=locals(), password_var_name="ETYPES_PASSWORD")
+NUMBER = 3 * 60
+
+AutoLoader(locals=locals(),  password_file="/tmp/dynamic_loader_password_file")
